@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Paginated Table Example</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Iterate through paginated items -->
+        <tr *ngFor="let item of items | paginate: { itemsPerPage: 10, currentPage: p }">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.age }}</td>
+          <td>{{ item.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Pagination controls -->
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+  
