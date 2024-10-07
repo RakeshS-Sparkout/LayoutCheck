@@ -19,5 +19,9 @@ export const routes: Routes = [
     {
         path: 'features',
         loadComponent: () => import('./components/app4/app4.component').then((m) => m.App4Component)
+    },
+    {
+        path: 'team',
+        loadComponent: () => import('./components/pagination/pagination.component').then((m) => m.PaginationComponent)
     }
 ];

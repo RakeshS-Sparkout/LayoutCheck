@@ -1,0 +1,18 @@
+/* Style the table container */
+.mat-elevation-z8 {
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  /* Style the table */
+  .mat-table {
+    width: 100%;
+  }
+  
+  /* Style the paginator */
+  .mat-paginator {
+    margin-top: 16px;
+  }
+  

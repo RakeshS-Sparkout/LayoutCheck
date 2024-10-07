@@ -10,7 +10,6 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Iterate through paginated items -->
         <tr *ngFor="let item of items | paginate: { itemsPerPage: 10, currentPage: p }">
           <td>{{ item.id }}</td>
           <td>{{ item.name }}</td>

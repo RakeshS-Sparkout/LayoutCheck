@@ -11,12 +11,10 @@ import { NgxPaginationModule } from 'ngx-pagination';
 })
 export class App4Component {
 
-  // Array of objects to represent table data
 items: { id: number; name: string; age: number; email: string }[] = [];
 p: number = 1; // Current page number
 
 constructor() {
-  // Generate dummy data for the table
   for (let i = 1; i <= 50; i++) {
     this.items.push({
       id: i,
